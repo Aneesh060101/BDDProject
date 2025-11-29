@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="11.816" tests="1" skipped="0" failures="1" errors="0" timestamp="2025-11-28T11:25:24.439786900Z">
+<testcase classname="Registration Functionality" name="To verify Registration Functionality by entering valid credentials" time="11.553">
+<failure type="java.lang.AssertionError" message="expected [Your Account Has Been Created!] but found [Register Account]">
+<![CDATA[java.lang.AssertionError: expected [Your Account Has Been Created!] but found [Register Account]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at stepdefinition.TC_RF_001.user_should_be_registered_successfully(TC_RF_001.java:78)
+	at ✽.User should be Registered Successfully(file:///C:/Users/admin/Documents/workspace-spring-tools-for-eclipse-4.32.1.RELEASE/KCLife/Vrindavan/01_registration.feature:15)
+]]>
+</failure>
+<system-out><![CDATA[
+Given User has opened the browser and launched the application..............passed
+When User enters valid First Name...........................................passed
+And User enters valid Last Name.............................................passed
+And User enters valid Email.................................................passed
+And User enters valid Telephone.............................................passed
+And User enters valid Password..............................................passed
+And User enters valid Password Confirm......................................passed
+And User clicks on radio button no..........................................passed
+And User clicks on privacy policy checkbox..................................passed
+And User clicks on continue button..........................................passed
+Then User should be Registered Successfully.................................failed
+]]></system-out>
+</testcase>
+</testsuite>
